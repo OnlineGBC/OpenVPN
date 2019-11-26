@@ -7,5 +7,13 @@ Copy server files:
     /etc/openvpn/easy-rsa/keys/client-certificate.crt
     /etc/openvpn/easy-rsa/keys/client-certificate.key 
 to /etc/openvpn
+
+In server.conf, enter this line:
+remote-cert-tls client
+In client.conf, enter this line:
+remote-cert-tls server
+
+
 sudo openvpn --config ./client.conf
 Will prompt for user ID and pswd (vpn-user, openvpn w 2FA string added)
+
