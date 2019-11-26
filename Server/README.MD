@@ -6,17 +6,13 @@ Identify a machine on your network as the DMZ and configure it as such using tha
 Follow installation instructions to set up OpenVPN on DMZ server
 Use this guideline for Distiguished Name (DN) definition:
 Notes:
-# For extra security beyond that provided
-# by SSL/TLS, create an "HMAC firewall"
-# to help block DoS attacks and UDP port flooding.
-#
-# Generate with:
-#   openvpn --genkey --secret ta.key
-#
-# The server and each client must have
-# a copy of this key.
-# The second parameter should be '0'
-# on the server and '1' on the clients.
+For extra security beyond that provided by SSL/TLS, create an "HMAC firewall" to help block DoS attacks and UDP port flooding.
+
+Generate with:
+ openvpn --genkey --secret ta.key
+
+The server and each client must have a copy of this key.
+The second parameter should be '0' on the server and '1' on the clients.
 tls-auth ta.key 0 # This file is secret
 
 export KEY_COUNTRY="US"
