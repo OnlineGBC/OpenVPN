@@ -54,6 +54,15 @@ Create a new user for VPN or activate 2FA for an existing user:
  Google Authenticator. Since the feature of passing the code to the server isn't supported by OpenVPN clients, the code can 
  be included in the password field following the password. For instance, if the user's password is "ovpn-pass"  and the code 
  is "123456", then the user must put "ovpn-pass123456" in the password field.
+	su -c "<command>" - usr-gauth - The command is being run in context of "usr-gauth" user because he has the necessary rights to /etc/openvpn/google-authenticator folder
+
+Parameters for google-authenticator - the script that generates tokens:
+		-t - use time-based authentication
+		-d - disallow reuse of the same code
+		-r3 R30 - limit logins to 3 per every 30 seconds
+		-f - write token key and settings without first confirming with user
+		-s - location where the token file for the <username> will be put. We use /etc/openvpn/google-authenticator.
+The token ID must be passed to the user so that they could add it on the Google Authenticator app installed on their smartphone. 
 
 
 CLIENT SETUP  =========================================================================================================================
