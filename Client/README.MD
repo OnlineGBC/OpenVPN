@@ -1,4 +1,4 @@
-How to downoad, install, start and stop Openvpn client
+How to download, install, start and stop Openvpn client
 
 Download and Install OpenVPN full package from here:  https://openvpn.net/vpn-software-packages/
 
