@@ -66,7 +66,7 @@ The token ID must be passed to the user so that they could add it on the Google 
 
 
 CLIENT SETUP  =========================================================================================================================
-
+LINUX:
 How to download, install, start and stop Openvpn client
 
 Download and Install OpenVPN full package from here:  https://openvpn.net/vpn-software-packages/
@@ -86,10 +86,9 @@ remote-cert-tls server
 sudo openvpn --config ./client.conf
 Will prompt for user ID and pswd (vpn-user, openvpn w 2FA string added)
 
+WINDOWS:
+Download and Install OpenVPN full package from here: https://openvpn.net/downloads/openvpn-connect-v2-windows.msi
+Copy server files: ca.crt, client-certificate.crt client-certificate.key to openvpn in Windows
+In client.ovpn, enter this line: remote-cert-tls server
+Start OpenVPN and enter path to client
 
-
- 
- 
- 
- 
- 
