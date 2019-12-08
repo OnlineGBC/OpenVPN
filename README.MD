@@ -1,5 +1,5 @@
 
-SERVER SETUP  =========================================================================================================================
+SERVER SETUP  =======================================================================================================
 
 How to download, install OpenVPN Access server:
 
@@ -33,7 +33,7 @@ Identify server files:
     /etc/openvpn/easy-rsa/keys/client-certificate.crt
     /etc/openvpn/easy-rsa/keys/client-certificate.key 
 to /etc/openvpn
-Set up Google 2FA (not easy--done by Vitaly Volkov on Upwork)
+Set up Google 2FA (done by Vitaly Volkov)
 
 
 How to start/stop openvpn server?
