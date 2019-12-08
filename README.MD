@@ -37,7 +37,9 @@ Set up Google 2FA (done by Vitaly Volkov)
 
 
 How to start/stop openvpn server?
+
 sudo systemctl restart/start/stop/status openvpn
+
 openvpn is installed in /etc/openvpn on server
 
 There is a bug (https://bugzilla.redhat.com/show_bug.cgi?id=1435831) as a result of which OpenVPN server does not start on reboot.  To fix this, we must manually "sudo mkdir /run/openvpn" after the system has started.  Else, put this in a batch script sowmehere, later
