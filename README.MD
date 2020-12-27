@@ -4,6 +4,13 @@ SUMMARY ONLY!!
 More extensive documentation now available at ../Documentation/OpenVPN Server with 2FA on Windows-Linux.docx
 
 
+
+
+
+
+
+
+
 SERVER SETUP  =======================================================================================================
 
 How to download, install OpenVPN Access server:
