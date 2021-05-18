@@ -11,7 +11,7 @@ More extensive documentation now available at ../Documentation/OpenVPN Server wi
 
 
 
-SERVER SETUP  =======================================================================================================
+SERVER SETUP  =================================================================================
 
 How to download, install OpenVPN Access server:
 
